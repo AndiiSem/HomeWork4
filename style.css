@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 70% 27%;
+    grid-auto-rows: minmax(0 , auto);
+    column-gap: 20px;
+}
+
+.FirstStudentBlock{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'nav mainInfo' 
+    'footer footer';
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 70px 1fr;
+
+    grid-gap: 20px;
+
+    border: 1px solid black;
+    margin: 20px 0 0 20px;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 350px 500px 1fr;
+    align-items: center;
+    background: rgb(109 100 237);
+    border-radius: 10px;
+}
+
+.headerLogo{
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap:20px;
+    align-items: center;
+    padding-left: 20px ;
+    color: white;
+}
+
+.headerSearch{
+    display: grid;
+    justify-content: end;
+}
+
+.inputBar{
+    width: 250px;
+    max-width: 250px;
+    height: 40px;
+    padding: 10px 15px 10px 50px;
+    font-size: 15px;
+    border: 1px solid rgb(149 144 238);
+    border-radius: 10px;
+    background: rgb(149 144 238);
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNlYXJjaC1pY29uIGx1Y2lkZS1zZWFyY2giPjxwYXRoIGQ9Im0yMSAyMS00LjM0LTQuMzQiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PC9zdmc+');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+}
+.inputBar:focus {
+  border-color: rgb(149 144 238);
+    outline: none;
+}
+
+.inputBar::placeholder {
+  color: rgb(235, 235, 235);
+}
+.headerProfile{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.headerProfileBell{
+    color: white;
+}
+
+.headerProfileIcon{
+    border-radius: 30px;
+    background: white;
+    color: rgb(109 100 237);
+    border-radius: 30px;
+}
+
+
+
+.SecondStudentBlock{
+    border: 1px solid black;
+    margin: 20px 0 0 0;
+}
+
+
