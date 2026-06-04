@@ -17,13 +17,9 @@
     'header header'
     'main main'
     'footer footer';
-
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 70px 1fr;
-
     grid-gap: 20px;
-
-    border: 1px solid black;
     margin: 20px 0 0 20px;
 }
 
@@ -460,6 +456,22 @@
     background: #f9dcde;
     color: #ba7479;
     border-radius: 10px;
+}
+
+.footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+    background: #f3f4f8;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerInfo{
+    justify-self: center;
+    color: grey;
 }
 
 
