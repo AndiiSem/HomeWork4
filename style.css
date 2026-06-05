@@ -21,6 +21,8 @@
     grid-template-rows: 70px 1fr;
     grid-gap: 20px;
     margin: 20px 0 0 20px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
 }
 
 .header{
@@ -39,6 +41,7 @@
     align-items: center;
     padding-left: 20px ;
     color: white;
+    font-size: 12px;
 }
 
 .headerSearch{
@@ -89,7 +92,7 @@
     grid-area: main;
     display: grid;
     grid-template-columns: 250px 2fr;
-    grid-template-rows: minmax(0, auto);
+    grid-template-rows: minmax(0, 880px);
     gap: 20px;
 }
 
@@ -484,8 +487,333 @@
 
 
 .SecondStudentBlock{
-    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
     margin: 20px 0 0 0;
 }
+
+.secondHeader{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    background: rgb(109 100 237);
+    border-radius: 10px;
+    font-size: 12px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10YWxseTMtaWNvbiBsdWNpZGUtdGFsbHktMyI+PHBhdGggZD0iTTQgNHYxNiIvPjxwYXRoIGQ9Ik05IDR2MTYiLz48cGF0aCBkPSJNMTQgNHYxNiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    padding-left: 40px;
+}
+
+.secondHeaderProfile{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secondMainInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 160px 200px 200px 160px 90px ;
+    margin: 20px 20px 0 20px ;
+    row-gap: 10px;
+}
+
+.secondSection1{
+    background: #fafafc;
+    background-image: url('./img/Welcome_logo.png');
+    background-repeat: no-repeat;
+    background-position: 30px 60px;
+    background-size: 240px;
+    border: 1px solid #fafafc;
+    border-radius: 10px;
+}
+
+.secondSection1 h1{
+    font-size: 25px;
+    padding:20px 0 5px 20px;
+}
+
+.secondSection1 p{
+    font-size: 15px;
+    color: grey;
+    padding-left: 20px;
+}
+
+.secondButtonView{
+    width: 140px;
+    height: 40px;
+    margin: 90px 0 0 20px;
+    border: none;
+    background: rgb(109 100 237);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.secondSection2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr;
+    row-gap: 10px;
+    background: #fafafc;
+    border: 1px solid #fafafc;
+    border-radius: 10px;
+}
+
+.secondSection2Title{
+    padding: 20px 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.secondSection2Info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+
+.secondSection2Logo{
+    width: 90px;
+    height: 90px;
+    margin: 8px 0 0 10px;
+    background: rgb(109 100 237);
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXVzZXIta2V5LWljb24gbHVjaWRlLXVzZXIta2V5Ij48cGF0aCBkPSJNMjAgMTF2NiIvPjxwYXRoIGQ9Ik0yMCAxM2gyIi8+PHBhdGggZD0iTTMgMjF2LTJhNCA0IDAgMCAxIDQtNGg2YTQgNCAwIDAgMSAyLjA3Mi41NzgiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjciIHI9IjQiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjE5IiByPSIyIi8+PC9zdmc+');
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    background-size: 40px;
+    border-radius: 50px;
+}
+
+.secondSection2MainInfo{
+    display: grid;
+    grid-template-rows: repeat(3 ,auto);
+}
+
+.secondSection2MainInfo h1{
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+
+.secondSection2Mail{
+    color: grey;
+}
+
+.secondSection2Button{
+    width: 140px;
+    height: 20px;
+    border: none;
+    background: #e3ddf5;
+    color: rgb(109 100 237);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.statSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr;
+    row-gap: 10px;
+    background: #effaf2;
+    border-radius: 10px;
+}
+
+.statSectionTitle{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 0 0 20px;
+}
+
+.Statistic{
+    display: grid;
+    grid-template-columns: repeat(4 , 80px);
+    grid-template-rows: 130px;
+    justify-content: space-evenly;
+}
+
+.secondStatItem{
+    background: #fdfdfd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 60px;
+    grid-template-rows: repeat(3 , 40px);
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.secondStatItemLogo , .secondStatItemNumber , .secondStatItemTitle{
+    justify-self: center;
+    align-self: center;
+}
+
+.TasksSection{
+    background: #fdfbeb;
+    border-radius: 10px;
+    display: grid;
+    grid-template-row: 1fr 2fr;
+}
+
+.secondTaskTitle{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    margin: 20px 20px 0 20px;
+    row-gap: 20px;
+}
+
+.secondTaskTitle1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.secondTaskTitle2{
+    font-size: 16px;
+    text-decoration: none;
+    color:rgb(109 100 237);
+    justify-self: end;
+}
+
+.secondTaskInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 , 50px);
+    align-items: center;
+    row-gap: 5px;
+}
+
+.secondTaskInfoItem{
+    display: grid;
+    grid-template-columns: 20px 2fr 1fr;
+    align-items: center;
+}
+
+.secondTaskComplete{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0 5px 0 20px;
+}
+
+.secondTaskTag{
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+.secondTaskCompleteTime{
+    color: grey;
+    font-size: 12px;
+}
+
+.calendarSection{
+    background: #f4f9ff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 60px 2fr;
+}
+
+.secondcalendarTitle{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin:0 20px 0 20px;
+    align-items: center;
+}
+
+.secondcalendarTitle1{
+    font-size: 16px;
+    font-weight: bold;   
+}
+
+.secondcalendarTitle2{
+    font-size: 16px;
+    justify-self: end;
+    text-decoration: none;
+    color:rgb(109 100 237);
+}
+
+.secondcalendarInfo{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+}
+
+.secondcalendarItem{
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.secondcalendarDay{
+    font-size: 12px;
+    align-self: center;
+    justify-self: center;
+}
+
+.secondcalendarTask{
+    width: 40px;
+    height: 30px;
+    display: grid;
+    font-size: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondcalendarTaskTime{
+    margin-left: 2px;
+}
+
+.secondcalendarTask1{
+    background: #e1e2f5;
+    color: grey;
+    border-radius: 10px;
+}
+
+.secondcalendarTask2{
+    background: #e0f5e6;
+    color: #328249;
+    border-radius: 10px;
+}
+
+.secondcalendarTask3{
+    background: #fef5ce;
+    color: #baac6e;
+    border-radius: 10px;
+}
+
+.secondcalendarTask4{
+    background: #ffdcf0;
+    color: #b7769b;
+    border-radius: 10px;
+}
+
+.secondcalendarTask5{
+    background: #f9dcde;
+    color: #ba7479;
+    border-radius: 10px;
+}
+
+.secondFooter{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #f3f4f8;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondFooterInfo{
+    justify-self: center;
+    color: grey;
+}
+
+
 
 
