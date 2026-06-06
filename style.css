@@ -273,7 +273,7 @@
 .mainInfoMiddleSection{
     grid-area: mainInfoMiddleSection;
     display: grid;
-    grid-template-columns: 50% 47%;
+    grid-template-columns: 50% 48%;
     grid-template-rows: repeat(2 , 270px);
     gap: 20px;
 }
